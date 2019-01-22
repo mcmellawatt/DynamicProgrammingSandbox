@@ -13,12 +13,10 @@ def making_change_without_replacement(v, X):
     return T[len(X)-1][v-1]
 
 def main():
-    return 0
+    X = [1, 5, 10, 20]
 
-if __name__ == "__main__":
-    X = [1,5,10,20]
-
-    for i in range(1,51):
+    for i in range(1, 51):
         print("Make change for " + str(i) + "?: " + str(making_change_without_replacement(i, X)) + "\n")
 
+if __name__ == "__main__":
     main()
